@@ -1,67 +1,67 @@
-# class Student:#BLUE PRINT of the class
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
+class Student:#BLUE PRINT of the class
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-#     def display(self):
-#         print(f"Name: {self.name}")
-#         print(f"Age: {self.age}")
+    def display(self):
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age}")
 
 
-# s1 = Student("Vishesh", 20)#object
+s1 = Student("Vishesh", 20)#object
 
-# s1.display()
+s1.display()
 
-# class car:
-#     def __init__(self,name,model):
-#         self.name=name
-#         self.model=model
+class car:
+    def __init__(self,name,model):
+        self.name=name
+        self.model=model
     
-#     def display(self):
-#         print(f"NAME:{self.name}")
-#         print(f"NAME:{self.model}")
+    def display(self):
+        print(f"NAME:{self.name}")
+        print(f"NAME:{self.model}")
 
-# c1=car("BMW","X7")
-# c1.display()
+c1=car("BMW","X7")
+c1.display()
 
-# class employee:
-#     def __init__(self,name,age,dept):
-#         self.name=name
-#         self.age=age
-#         self.dept=dept
+class employee:
+    def __init__(self,name,age,dept):
+        self.name=name
+        self.age=age
+        self.dept=dept
     
-#     def display(self):
-#         print(f"Name: {self.name}")
-#         print(f"age: {self.age}")
-#         print(f"dept: {self.dept}")
+    def display(self):
+        print(f"Name: {self.name}")
+        print(f"age: {self.age}")
+        print(f"dept: {self.dept}")
 
-# e1=employee("vishesh",21,"it")
-# e1.display()
+e1=employee("vishesh",21,"it")
+e1.display()
 
-# class inherit(employee):#inherited function take the properties of the employee class 
-#     def function(self):
-#         print("inherited function")
+class inherit(employee):#inherited function take the properties of the employee class 
+    def function(self):
+        print("inherited function")
 
-# i1=inherit("hemika",25,"MBA")
-# i1.display()
-# i1.function()
+i1=inherit("hemika",25,"MBA")
+i1.display()
+i1.function()
 
 
-# class encap(car):
-#     def __init__(self, name, model, price):
-#         super().__init__(name, model)
+class encap(car):
+    def __init__(self, name, model, price):
+        super().__init__(name, model)
 
-#         self.__onroadprice = price
-#     def update(self):
-#         percent=self.__onroadprice*0.18
-#         self.__onroadprice+=percent
+        self.__onroadprice = price
+    def update(self):
+        percent=self.__onroadprice*0.18
+        self.__onroadprice+=percent
     
-#     def show(self):
-#         print(self.__onroadprice)
+    def show(self):
+        print(self.__onroadprice)
 
-# e2=encap("AUDI","Q5",5000000)
-# e2.update()
-# e2.show()
+e2=encap("AUDI","Q5",5000000)
+e2.update()
+e2.show()
 
 
 
